@@ -1,0 +1,21 @@
+{
+    "env": {
+        "TOOL_PG_HOST": "localhost",
+        "TOOL_PG_PORT": "5432",
+        "TOOL_PG_DB": "postgres",
+        "TOOL_PG_USER": "postgres",
+        "TOOL_PG_PASSWORD": "postgres",
+        "TOOL_MYSQL_HOST": "localhost",
+        "TOOL_MYSQL_PORT": "3307",
+        "TOOL_MYSQL_DB": "mydb",
+        "TOOL_MYSQL_USER": "root",
+        "TOOL_MYSQL_PASSWORD": "root",
+        "TOOL_MONGODB_HOST": "localhost",
+        "TOOL_MONGODB_PORT": "27017",
+        "TOOL_MONGODB_DB": "",
+        "TOOL_MONGODB_USER": "root",
+        "TOOL_MONGODB_PASSWORD": "password"
+    },
+    "video": false,
+    "screenshotOnRunFailure": false
+}

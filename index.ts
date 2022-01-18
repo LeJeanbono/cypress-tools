@@ -1,0 +1,1 @@
+export * as mongodb from '@cypress-tools/mongodb';

@@ -1,0 +1,31 @@
+{
+  "name": "@cypress-tools/mysql",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/mysql": "2.15.19",
+    "mysql2": "2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeJeanbono/cypress-tools.git"
+  },
+  "author": "Jean-Michel LECLERCQ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeJeanbono/cypress-tools/issues"
+  },
+  "homepage": "https://github.com/LeJeanbono/cypress-tools#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}

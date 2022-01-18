@@ -1,0 +1,28 @@
+{
+  "name": "cypress-tools",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "ora": "5.4.1",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "typescript": "4.4.4",
+    "@types/node": "16.11.7",
+    "@types/lodash": "4.14.177",
+    "cypress": "9.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeJeanbono/cypress-tools.git"
+  },
+  "author": "Jean-Michel LECLERCQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeJeanbono/cypress-tools/issues"
+  },
+  "homepage": "https://github.com/LeJeanbono/cypress-tools#readme"
+}
