@@ -27,10 +27,10 @@ importers:
 
   packages/mysql:
     specifiers:
-      '@types/mysql': 2.15.19
+      '@types/mysql': 2.15.20
       mysql2: 2.3.3
     dependencies:
-      '@types/mysql': 2.15.19
+      '@types/mysql': 2.15.20
       mysql2: 2.3.3
 
   packages/pdf:
@@ -114,8 +114,8 @@ packages:
     resolution: {integrity: sha512-0fDwydE2clKe9MNfvXHBHF9WEahRuj+msTuQqOmAApNORFvhMYZKNGGJdCzuhheVjMps/ti0Ak/iJPACMaevvw==}
     dev: true
 
-  /@types/mysql/2.15.19:
-    resolution: {integrity: sha512-wSRg2QZv14CWcZXkgdvHbbV2ACufNy5EgI8mBBxnJIptchv7DBy/h53VMa2jDhyo0C9MO4iowE6z9vF8Ja1DkQ==}
+  /@types/mysql/2.15.20:
+    resolution: {integrity: sha512-QyOqSRhe540jmdg3AqiS8AbCDvSwDgxAJcsBkMqDQw0y87OQla7y8RFW/MYcUUHBFi1AZrRYkjzSAL/bfCKMuQ==}
     dependencies:
       '@types/node': 16.11.9
     dev: false
