@@ -51,7 +51,16 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm run build -r
+      - name: install dependencies
+        run: pnpm install
       - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.7.0
         with:
           mongodb-version: '4.2'
+          mongodb-username: root
+          mongodb-password: password
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          install: false
+          project: ./packages/test

@@ -9,9 +9,9 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@cypress-tools/mongodb": "workspace:../mongo/dist",
-        "@cypress-tools/mysql": "workspace:../mysql/dist",
-        "@cypress-tools/pdf": "workspace:../pdf/dist",
-        "@cypress-tools/postgres": "workspace:../postgres/dist"
+        "@cypress-tools/mongodb": "workspace:../mongo",
+        "@cypress-tools/mysql": "workspace:../mysql",
+        "@cypress-tools/pdf": "workspace:../pdf",
+        "@cypress-tools/postgres": "workspace:../postgres"
     }
 }
