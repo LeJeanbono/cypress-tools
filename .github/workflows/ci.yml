@@ -19,6 +19,8 @@ jobs:
         env:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+        ports:
+          - "5432:5432"
         # Set health checks to wait until postgres has started
         options: >-
           --health-cmd pg_isready
@@ -35,6 +37,13 @@ jobs:
         ports:
           - 3307:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+      mongodb:
+        image: mongo:4.2
+        env:
+          MONGO_INITDB_ROOT_USERNAME: root
+          MONGO_INITDB_ROOT_PASSWORD: password
+        ports:
+          - 27017:27017
     steps:
       - uses: actions/checkout@v2
         with:
@@ -51,14 +60,6 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm run build -r
-      - name: install dependencies
-        run: pnpm install
-      - name: Start MongoDB
-        uses: supercharge/mongodb-github-action@1.7.0
-        with:
-          mongodb-version: '4.2'
-          mongodb-username: root
-          mongodb-password: password
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
