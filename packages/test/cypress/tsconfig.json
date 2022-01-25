@@ -7,7 +7,22 @@
         ],
         "types": [
             "cypress"
-        ]
+        ],
+        "baseUrl": "../packages",
+        "paths": {
+            "@cypress-tools/mysql": [
+                "mysql/src"
+            ],
+            "@cypress-tools/postgres": [
+                "postgres/src"
+            ],
+            "@cypress-tools/pdf": [
+                "pdf/src"
+            ],
+            "@cypress-tools/mongodb": [
+                "mongo/src"
+            ],
+        }
     },
     "include": [
         "**/*.ts"

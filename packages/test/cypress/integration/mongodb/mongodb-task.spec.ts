@@ -1,6 +1,6 @@
 import { MongoDBTask } from '@cypress-tools/mongodb/tasks';
 import { Inserted } from '@cypress-tools/mongodb/models';
-import { PersonMongoDB } from 'test/cypress/models/person';
+import { PersonMongoDB } from '../../models/person';
 
 describe('MongoDB Tasks', () => {
 

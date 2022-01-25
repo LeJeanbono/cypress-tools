@@ -11,8 +11,8 @@ declare global {
     }
 }
 
-Cypress.Commands.add(MongoDBTask.FIND_ALL, (insert: Insert) => {
-    return cy.task(MongoDBTask.FIND_ALL, insert)
+Cypress.Commands.add(MongoDBTask.INSERT, (insert: Insert) => {
+    return cy.task(MongoDBTask.INSERT, insert)
 });
 
 export { };
