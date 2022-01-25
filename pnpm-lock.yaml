@@ -25,6 +25,14 @@ importers:
     dependencies:
       mongodb: 4.2.0
 
+  packages/mongo/dist:
+    specifiers:
+      fs-extra: 10.0.0
+      mongodb: 4.2.0
+    dependencies:
+      fs-extra: 10.0.0
+      mongodb: 4.2.0
+
   packages/mysql:
     specifiers:
       '@types/mysql': 2.15.19
@@ -60,15 +68,15 @@ importers:
 
   packages/test:
     specifiers:
-      '@cypress-tools/mongodb': workspace:../mongo
-      '@cypress-tools/mysql': workspace:../mysql
-      '@cypress-tools/pdf': workspace:../pdf
-      '@cypress-tools/postgres': workspace:../postgres
+      '@cypress-tools/mongodb': workspace:../mongo/src
+      '@cypress-tools/mysql': workspace:../mysql/src
+      '@cypress-tools/pdf': workspace:../pdf/src
+      '@cypress-tools/postgres': workspace:../postgres/src
     dependencies:
-      '@cypress-tools/mongodb': link:../mongo
-      '@cypress-tools/mysql': link:../mysql
-      '@cypress-tools/pdf': link:../pdf
-      '@cypress-tools/postgres': link:../postgres
+      '@cypress-tools/mongodb': link:../mongo/src
+      '@cypress-tools/mysql': link:../mysql/src
+      '@cypress-tools/pdf': link:../pdf/src
+      '@cypress-tools/postgres': link:../postgres/src
 
 packages:
 
