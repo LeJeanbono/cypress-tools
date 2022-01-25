@@ -1,11 +1,8 @@
 {
-  "name": "@cypress-tools/postgres",
+  "name": "@cypress-tools/common",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
@@ -14,9 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "16.11.9",
-    "@types/pg": "8.6.1",
-    "pg": "8.7.1",
-    "@cypress-tools/common": "workspace:../common/src"
+    "ora": "5.4.1"
   }
 }

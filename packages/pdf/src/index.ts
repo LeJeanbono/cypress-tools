@@ -2,7 +2,7 @@
 /// <reference types="pdf-parse" />
 
 import fs from 'fs';
-import { Logger } from './logger';
+import { Logger } from '@cypress-tools/common';
 import { ParsedResult } from './models';
 import PdfParse = require("pdf-parse")
 

@@ -11,6 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "4.2.0"
+    "lodash": "4.17.21",
+    "mongodb": "4.2.0",
+    "@cypress-tools/common": "workspace:../common/src"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.177"
   }
 }

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import { MongoClient, WithId } from "mongodb";
-import { Logger } from "./logger";
+import { Logger } from "@cypress-tools/common";
 import { Aggregate, FindAll, FindById, Insert, MongoDBConfig, Query } from "./models";
 import { find } from 'lodash';
 export { Document } from "mongodb";

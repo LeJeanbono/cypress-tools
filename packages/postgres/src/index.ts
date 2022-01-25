@@ -3,7 +3,7 @@
 
 import * as fs from "fs";
 import { Client, QueryResult } from 'pg';
-import { Logger } from './logger';
+import { Logger } from '@cypress-tools/common';
 import { Column, InsertInto, PgConfig, SelectById, Table } from './models';
 
 let configuration: Cypress.PluginConfigOptions;
@@ -122,6 +122,7 @@ export function pgInsertInto(options: InsertInto): Promise<any> {
 
 export function pgDropTable(table: string) {
     const query = `DROP TABLE IF EXISTS ${table}`
+    console.log(query)
     return queryRows(query)
 }
 

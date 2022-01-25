@@ -1,4 +1,4 @@
-import ora from 'ora';
+import ora = require('ora');
 
 export class Logger {
     logger: any;
@@ -16,3 +16,4 @@ export class Logger {
     }
 
 }
+

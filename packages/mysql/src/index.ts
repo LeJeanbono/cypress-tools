@@ -2,7 +2,7 @@
 /// <reference types="mysql" />
 
 import mysql from "mysql2";
-import { Logger } from "./logger";
+import { Logger } from "@cypress-tools/common";
 import { Column, InsertInto, MysqlConfig } from "./models";
 
 let configuration: Cypress.PluginConfigOptions;
@@ -78,7 +78,7 @@ export function mysqlCreateTable(options: { table: string, columns: Column[] }) 
     options.columns.map((column, index) => {
         queryColumns += `${column.key} ${column.type}`
         if (index != options.columns.length - 1) {
-            queryColumns += ','
+            queryColumns += ', '
         }
     })
     const query = `CREATE TABLE ${options.table}(${queryColumns})`;

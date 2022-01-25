@@ -2,10 +2,6 @@
   "name": "cypress-tools",
   "version": "0.0.1",
   "description": "",
-  "dependencies": {
-    "ora": "5.4.1",
-    "lodash": "4.17.21"
-  },
   "devDependencies": {
     "typescript": "4.4.4",
     "@types/node": "16.11.7",
