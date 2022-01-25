@@ -51,11 +51,11 @@ importers:
   packages/postgres:
     specifiers:
       '@types/node': 16.11.21
-      '@types/pg': 8.6.1
+      '@types/pg': 8.6.4
       pg: 8.7.1
     dependencies:
       '@types/node': 16.11.21
-      '@types/pg': 8.6.1
+      '@types/pg': 8.6.4
       pg: 8.7.1
 
   packages/test:
@@ -134,8 +134,8 @@ packages:
     resolution: {integrity: sha512-lDBKAslCwvfK2uvS1Uk+UCpGvw+JRy5vnBFANPKFSY92n/iEnunXi0KVBjPJXhsM4jtdcPnS7tuZ0zjA9x6piQ==}
     dev: false
 
-  /@types/pg/8.6.1:
-    resolution: {integrity: sha512-1Kc4oAGzAl7uqUStZCDvaLFqZrW9qWSjXOmBfdgyBP5La7Us6Mg4GBvRlSoaZMhQF/zSj1C8CtKMBkoiT8eL8w==}
+  /@types/pg/8.6.4:
+    resolution: {integrity: sha512-uYA7UMVzDFpJobCrqwW/iWkFmvizy6knIUgr0Quaw7K1Le3ZnF7hI3bKqFoxPZ+fju1Sc7zdTvOl9YfFZPcmeA==}
     dependencies:
       '@types/node': 16.11.21
       pg-protocol: 1.5.0
