@@ -1,5 +1,5 @@
 import { PgTask } from '@cypress-tools/postgres/tasks';
-import { Person } from 'test/cypress/models/person';
+import { Person } from '../../models/person';
 
 describe('Postgres Tasks', () => {
 

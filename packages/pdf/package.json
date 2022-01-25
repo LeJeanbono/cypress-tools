@@ -21,6 +21,6 @@
     "@cypress-tools/common": "workspace:../common/src"
   },
   "devDependencies": {
-    "@types/node": "16.11.7"
+    "@types/node": "16.11.21"
   }
 }

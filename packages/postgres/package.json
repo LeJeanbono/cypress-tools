@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "16.11.9",
-    "@types/pg": "8.6.1",
+    "@types/node": "16.11.21",
+    "@types/pg": "8.6.4",
     "pg": "8.7.1",
     "@cypress-tools/common": "workspace:../common/src"
   }
