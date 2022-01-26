@@ -2,6 +2,7 @@
     "name": "test",
     "version": "0.0.1",
     "description": "",
+    "private": true,
     "scripts": {
         "cy-open": "cypress open",
         "cy-run": "cypress run"

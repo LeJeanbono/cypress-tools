@@ -15,6 +15,9 @@
             "@cypress-tools/mongodb": [
                 "mongo/dist"
             ],
+            "@cypress-tools/common": [
+                "common/dist"
+            ],
         }
     }
 }
