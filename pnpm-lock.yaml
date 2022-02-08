@@ -38,11 +38,11 @@ importers:
   packages/mysql:
     specifiers:
       '@cypress-tools/common': workspace:../common/src
-      '@types/mysql': 2.15.20
+      '@types/mysql': 2.15.21
       mysql2: 2.3.3
     dependencies:
       '@cypress-tools/common': link:../common/src
-      '@types/mysql': 2.15.20
+      '@types/mysql': 2.15.21
       mysql2: 2.3.3
 
   packages/pdf:
@@ -411,10 +411,10 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/mysql/2.15.20:
-    resolution: {integrity: sha512-QyOqSRhe540jmdg3AqiS8AbCDvSwDgxAJcsBkMqDQw0y87OQla7y8RFW/MYcUUHBFi1AZrRYkjzSAL/bfCKMuQ==}
+  /@types/mysql/2.15.21:
+    resolution: {integrity: sha512-NPotx5CVful7yB+qZbWtXL2fA4e7aEHkihHLjklc6ID8aq7bhguHgeIoC1EmSNTAuCgI6ZXrjt2ZSaXnYX0EUg==}
     dependencies:
-      '@types/node': 16.11.9
+      '@types/node': 16.11.21
     dev: false
 
   /@types/node/12.20.42:
@@ -427,10 +427,6 @@ packages:
 
   /@types/node/16.11.21:
     resolution: {integrity: sha512-Pf8M1XD9i1ksZEcCP8vuSNwooJ/bZapNmIzpmsMaL+jMI+8mEYU3PKvs+xDNuQcJWF/x24WzY4qxLtB0zNow9A==}
-
-  /@types/node/16.11.9:
-    resolution: {integrity: sha512-MKmdASMf3LtPzwLyRrFjtFFZ48cMf8jmX5VRYrDQiJa8Ybu5VAmkqBWqKU8fdCwD8ysw4mQ9nrEHvzg6gunR7A==}
-    dev: false
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
