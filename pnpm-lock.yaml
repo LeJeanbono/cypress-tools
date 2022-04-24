@@ -51,13 +51,13 @@ importers:
       '@types/fs-extra': 9.0.13
       '@types/node': 16.11.21
       '@types/pdf-parse': 1.1.1
-      fs-extra: 10.0.0
+      fs-extra: 10.1.0
       pdf-parse: 1.1.1
     dependencies:
       '@cypress-tools/common': link:../common/src
       '@types/fs-extra': 9.0.13
       '@types/pdf-parse': 1.1.1
-      fs-extra: 10.0.0
+      fs-extra: 10.1.0
       pdf-parse: 1.1.1
     devDependencies:
       '@types/node': 16.11.21
@@ -1322,6 +1322,16 @@ packages:
       graceful-fs: 4.2.8
       jsonfile: 6.1.0
       universalify: 2.0.0
+    dev: true
+
+  /fs-extra/10.1.0:
+    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
+    engines: {node: '>=12'}
+    dependencies:
+      graceful-fs: 4.2.8
+      jsonfile: 6.1.0
+      universalify: 2.0.0
+    dev: false
 
   /fs-extra/8.1.0:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==}
