@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ora": "5.4.1"
+    "ora": "6.1.0"
   }
 }
