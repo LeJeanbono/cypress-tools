@@ -27,11 +27,11 @@ importers:
       '@cypress-tools/common': workspace:../common/src
       '@types/lodash': 4.14.178
       lodash: 4.17.21
-      mongodb: 4.3.1
+      mongodb: 4.7.0
     dependencies:
       '@cypress-tools/common': link:../common/src
       lodash: 4.17.21
-      mongodb: 4.3.1
+      mongodb: 4.7.0
     devDependencies:
       '@types/lodash': 4.14.178
 
@@ -144,11 +144,13 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/xvfb/1.2.4:
+  /@cypress/xvfb/1.2.4_supports-color@8.1.1:
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7_supports-color@8.1.1
       lodash.once: 4.1.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@manypkg/find-root/1.1.0:
@@ -658,8 +660,8 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /bson/4.6.1:
-    resolution: {integrity: sha512-I1LQ7Hz5zgwR4QquilLNZwbhPw0Apx7i7X9kGMBTsqPdml/03Q9NBtD9nt/19ahjlphktQImrnderxqpzeVDjw==}
+  /bson/4.6.4:
+    resolution: {integrity: sha512-TdQ3FzguAu5HKPPlr0kYQCyrYUYh8tFM+CMTpxjNzVzxeiJY00Rtuj3LXLHSgiGvmaWlZ8PE+4KyM2thqE38pQ==}
     engines: {node: '>=6.9.0'}
     dependencies:
       buffer: 5.7.1
@@ -932,7 +934,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@cypress/request': 2.88.10
-      '@cypress/xvfb': 1.2.4
+      '@cypress/xvfb': 1.2.4_supports-color@8.1.1
       '@types/node': 14.17.34
       '@types/sinonjs__fake-timers': 8.1.1
       '@types/sizzle': 2.3.3
@@ -992,8 +994,26 @@ packages:
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.1.3
+    dev: false
+
+  /debug/3.2.7_supports-color@8.1.1:
+    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.3
+      supports-color: 8.1.1
+    dev: true
 
   /debug/4.3.2:
     resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
@@ -1585,7 +1605,7 @@ packages:
     dev: true
 
   /ip/1.1.5:
-    resolution: {integrity: sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=}
+    resolution: {integrity: sha512-rBtCAQAJm8A110nbwn6YdveUnuZH3WrC36IwkRXxDnq53JvXA2NVQvB7IHyKomxK1MJ4VDNw3UtFDdXQ+AvLYA==}
     dev: false
 
   /is-arrayish/0.2.1:
@@ -2021,21 +2041,21 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /mongodb-connection-string-url/2.4.1:
-    resolution: {integrity: sha512-d5Kd2bVsKcSA7YI/yo57fSTtMwRQdFkvc5IZwod1RRxJtECeWPPSo7zqcUGJELifRA//Igs4spVtYAmvFCatug==}
+  /mongodb-connection-string-url/2.5.2:
+    resolution: {integrity: sha512-tWDyIG8cQlI5k3skB6ywaEA5F9f5OntrKKsT/Lteub2zgwSUlhqEN2inGgBTm8bpYJf8QYBdA/5naz65XDpczA==}
     dependencies:
       '@types/whatwg-url': 8.2.1
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.3.1:
-    resolution: {integrity: sha512-sNa8APSIk+r4x31ZwctKjuPSaeKuvUeNb/fu/3B6dRM02HpEgig7hTHM8A/PJQTlxuC/KFWlDlQjhsk/S43tBg==}
+  /mongodb/4.7.0:
+    resolution: {integrity: sha512-HhVar6hsUeMAVlIbwQwWtV36iyjKd9qdhY+s4wcU8K6TOj4Q331iiMy+FoPuxEntDIijTYWivwFJkLv8q/ZgvA==}
     engines: {node: '>=12.9.0'}
     dependencies:
-      bson: 4.6.1
+      bson: 4.6.4
       denque: 2.0.1
-      mongodb-connection-string-url: 2.4.1
-      socks: 2.6.1
+      mongodb-connection-string-url: 2.5.2
+      socks: 2.6.2
     optionalDependencies:
       saslprep: 1.0.3
     dev: false
@@ -2416,6 +2436,8 @@ packages:
     dependencies:
       debug: 3.2.7
       node-ensure: 0.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /pend/1.2.0:
@@ -2895,8 +2917,8 @@ packages:
     engines: {node: '>= 6.0.0', npm: '>= 3.0.0'}
     dev: false
 
-  /socks/2.6.1:
-    resolution: {integrity: sha512-kLQ9N5ucj8uIcxrDwjm0Jsqk06xdpBjGNQtpXy4Q8/QY2k+fY7nZH8CARy+hkbG+SGAovmzzuauCpBlb8FrnBA==}
+  /socks/2.6.2:
+    resolution: {integrity: sha512-zDZhHhZRY9PxRruRMR7kMhnf3I8hDs4S3f9RecfnGxvcBHQcKcIH/oUcEWffsfl1XxdYlA7nnlGbbTvPz9D8gA==}
     engines: {node: '>= 10.13.0', npm: '>= 3.0.0'}
     dependencies:
       ip: 1.1.5
