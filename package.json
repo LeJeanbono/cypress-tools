@@ -5,7 +5,7 @@
   "devDependencies": {
     "@types/lodash": "4.14.178",
     "@types/node": "16.11.21",
-    "cypress": "9.3.1",
+    "cypress": "10.1.0",
     "typescript": "4.5.5",
     "multi-semantic-release": "2.11.0"
   },
